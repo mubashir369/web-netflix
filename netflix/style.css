@@ -1,0 +1,266 @@
+:root{
+    --primary-color: #e50914;
+}
+*{
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    border-bottom:5px solid gray ;
+}
+.container::before{
+    content:"";
+    background: url(./img/back.jpg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+.container .navbar{
+    height: 100px;
+    display: flex;
+}
+.container .navbar .left{
+    height: 100%;
+    display: flex;
+    float: left;
+}
+.container .navbar .left img{
+    width: 200px;
+    position: absolute;
+    left: 35px;
+    
+}
+.container .navbar .right{
+    display: flex;
+    height: 100px;
+    float: right;
+    position: absolute;
+    right: 50px;
+
+}
+.container .navbar .right .lang{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 7px 10px;
+    color: white;
+    background: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.container .navbar .right .lang option{
+    background-color: grey;
+
+}
+.container .navbar .right button{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 7px;
+    background: var(--primary-color);
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+}
+.container .navbar .right button a{
+    text-decoration: none;
+    color: white;
+
+}.container .titel{
+    padding: 70px 45px;
+}
+.container .titel .content{
+    width: 950px;
+    margin: auto;
+    padding: 75px;
+    text-align: center;
+}
+.container .titel .content h1{
+    width: 650px;
+    margin: auto;
+    font-size: 3.1rem;
+    text-align: center;
+}
+.container .titel .content h2{
+    width: 650px;
+    margin: auto;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.container .titel .content form h3{
+    font-size: 1rem;
+    margin: 18px;
+    text-align: center;
+}
+.container .titel .content form .email{
+    width: 780px;
+    margin: auto;
+}
+.container .titel .content form .email input{
+    height: 60px;
+    width: 450px;
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+    outline: none;
+
+}
+.container .titel .content form .email button:hover{
+    background-color: red;
+}
+.container .titel .content form .email button{
+    margin: auto;
+    height: 60px;
+    width: 180px;
+    align-items: center;
+    font-size: 20px;
+    padding: 7px;
+    background: var(--primary-color);
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    margin-left: -5px;
+}
+.container .titel .content form .email button a{
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    max-width: 70%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+/*section*/
+
+
+
+
+
+.main{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 350px;
+    color: white;
+    padding-top:25px ;
+    display: flex;
+    justify-content: space-between;
+    
+    border-bottom:5px solid grey ;
+}
+.text{
+    margin-top: 100px;
+    width: 50%;
+    padding-left: 50px;
+}
+.img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+img{
+    width: 400px;
+    
+}
+
+/*section qustions*/
+.lastsec{
+    margin-top: 50px;
+}
+.faq{
+    text-align: center;
+}
+
+.faq h1{
+    padding-bottom: 40px;
+    font-size: 3rem;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    align-items: center;
+}
+
+.questions li{
+    padding: 20px 30px;
+    margin: 5px;
+    font-size: 20px;
+    background-color: #303030;
+    color: white;
+    text-align: left;
+    width: 50%;
+}
+
+.faq p{
+    padding-top: 60px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.input{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.input input{
+    
+    width: 500px;
+    height: 60px;
+}
+
+.input button{
+    height: 60px;
+    width: 320px;
+    left: 20px;
+    text-align: center;
+    background-color: var(--primary-color);
+    font-size: 1.5rem;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
+.input button:hover{
+    background-color:red
+}
+
+/*footer*/
+.footer ,
+.footer a{
+    color: #999999;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.footer p{
+    margin-bottom:25px;
+}
+.footer .footer-cols{
+    display: flex;
+    justify-content: space-between;
+}ul{
+    list-style: none;
+}
+.footer li{
+    line-height: 2.4;
+} 
